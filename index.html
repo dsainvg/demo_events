@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Events - Space Festival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cosmic-container">
+        <!-- Background stars -->
+        <div class="starfield">
+        </div>
+
+        <!-- Celestial bodies for events -->
+        <div class="celestial-bodies">
+            <div class="celestial-body mars" data-event-id="1" role="button" tabindex="0" aria-label="Astrophotography Workshop Event">
+                <div class="planet-surface mars-surface"></div>
+            </div>
+            <div class="celestial-body jupiter" data-event-id="2" role="button" tabindex="0" aria-label="Telescope Viewing & Star Party Event">
+                <div class="planet-surface jupiter-surface"></div>
+                <div class="jupiter-bands"></div>
+            </div>
+            <div class="celestial-body saturn" data-event-id="3" role="button" tabindex="0" aria-label="Space Art Competition Event">
+                <div class="planet-surface saturn-surface"></div>
+                <div class="saturn-rings"></div>
+            </div>
+            <div class="celestial-body neptune" data-event-id="4" role="button" tabindex="0" aria-label="Planetarium Shows Event">
+                <div class="planet-surface neptune-surface"></div>
+            </div>
+            <div class="celestial-body venus" data-event-id="5" role="button" tabindex="0" aria-label="Guest Speaker Series Event">
+                <div class="planet-surface venus-surface"></div>
+            </div>
+            <div class="celestial-body earth" data-event-id="6" role="button" tabindex="0" aria-label="Solar System Hunt Event">
+                <div class="planet-surface earth-surface">
+                    <div class="earth-clouds"></div>
+                </div>
+            </div>
+            <div class="celestial-body uranus" data-event-id="7" role="button" tabindex="0" aria-label="Rocket Building Workshop Event">
+                <div class="planet-surface uranus-surface"></div>
+                <div class="uranus-rings"></div>
+            </div>
+            <div class="celestial-body nebula" data-event-id="8" role="button" tabindex="0" aria-label="Constellation Talks Event">
+                <div class="nebula-cloud"></div>
+            </div>
+            <div class="celestial-body moon" data-event-id="10" role="button" tabindex="0" aria-label="Observatory Tours Event">
+                <div class="moon-surface"></div>
+                <div class="moon-craters"></div>
+            </div>
+            <div class="celestial-body red-planet" data-event-id="9" role="button" tabindex="0" aria-label="Space Cocktails Speakeasy Event">
+                <div class="planet-surface red-planet-surface"></div>
+            </div>
+            <div class="celestial-body blue-star-cluster" data-event-id="9" role="button" tabindex="0" aria-label="Space Cocktails Speakeasy Event">
+                <div class="star-cluster-core"></div>
+            </div>
+            <div class="celestial-body orange-dwarf" data-event-id="9" role="button" tabindex="0" aria-label="Space Cocktails Speakeasy Event">
+                <div class="planet-surface orange-dwarf-surface"></div>
+            </div>
+        </div>
+
+        <!-- Telescope at bottom -->
+        <div class="telescope-container">
+        </div>
+
+        <!-- Event modal -->
+        <div class="modal-overlay" id="eventModal" style="display: none;">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+                <div class="modal-body">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-details">
+                        <p id="modalDescription"></p>
+                        <div class="event-info">
+                            <div class="info-item">
+                                <strong>Date:</strong> <span id="modalDate"></span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Time:</strong> <span id="modalTime"></span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location:</strong> <span id="modalLocation"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
